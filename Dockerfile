@@ -11,7 +11,7 @@ RUN apt-get install -y sox
 RUN apt-get install -y wget
 
 RUN wget http://download.cinecert.com/asdcplib/asdcplib-2.7.19.tar.gz && tar xvzf asdcplib-2.7.19.tar.gz && rm asdcplib-2.7.19.tar.gz
-RUN cd /asdcplib-2.7.19 && ./configure --prefix=/asdcplib-2.7.19/build/ && make -j3 && make install && make clean
+RUN cd /asdcplib-2.7.19 && ./configure --prefix=/asdcplib-2.7.19/build/ --enable-as-02 && make -j3 && make install && make clean
 RUN cp -r /asdcplib-2.7.19/build/bin/* /usr/local/bin 
 RUN mkdir -p /usr/local/include/asdcplib && cp -r /asdcplib-2.7.19/build/include/* /usr/local/include/asdcplib 
 RUN cp -r /asdcplib-2.7.19/build/lib/* /usr/lib
