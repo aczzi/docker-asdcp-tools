@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 LABEL author="Antoine COZZI <antoine.cozzi@gmail.com>"
-ARG version=rel_2_10_32
+ARG version=rel_2_12_3
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends build-essential libssl-dev openssl sox wget git unzip autoconf libtool automake
