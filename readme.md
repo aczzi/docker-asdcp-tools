@@ -1,4 +1,10 @@
-From John Hurst http://www.cinecert.com/asdcplib/ https://github.com/cinecert/asdcplib
+## ASDCPLIB TOOLS
+
+From John Hurst Cinecert
+
+- http://www.cinecert.com/asdcplib/
+
+- https://github.com/cinecert/asdcplib
 
 Get access to asdcplib tools for DCP's MXF:
 
@@ -8,6 +14,8 @@ Get access to asdcplib tools for IMF's MXF:
 
 as-02-info, as-02-unwrap, as-02-wrap
 
-use asdcplib 2.10.32
+## BUILD CONTAINER
+
+set version with ARG version=rel_2_10_32
 
     docker build -t asdcp-tools .
