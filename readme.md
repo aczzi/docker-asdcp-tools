@@ -16,6 +16,6 @@ as-02-info, as-02-unwrap, as-02-wrap
 
 ## BUILD CONTAINER
 
-set version with ARG version=rel_2_10_32
+set version with ARG version=rel_X_X_X
 
     docker build -t asdcp-tools .
